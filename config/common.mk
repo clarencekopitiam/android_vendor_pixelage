@@ -8,7 +8,9 @@ $(call inherit-product, vendor/gms/products/gms.mk)
 $(call inherit-product-if-exists, vendor/pixelage-pif/product.mk)
 
 # Include pixelage-priv
-$(call inherit-product-if-exists, vendor/pixelage-priv/config/common.mk)
+#$(call inherit-product-if-exists, vendor/pixelage-priv/config/common.mk)
+
+include vendor/lineage-priv/keys/keys.mk
 
 PRODUCT_BRAND ?= ProjectPixelage
 
